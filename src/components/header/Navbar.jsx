@@ -8,15 +8,15 @@ const Navbar = () => {
     const [show, setShow] = useState(false)
 
     return (
-        <>
-            <button onClick={() => setShow(!show)}>
+        <div className="flex">
+            <button onClick={() => setShow(!show)} className="md:hidden">
                 {
                     show ?
                     <img src={navbarCrossIcon} alt="navbar icon"/> :
                     <img src={navbarBarsIcon} alt="navbar icon"/>
                 }
             </button>
-            <div className={`absolute px-4 bg-white top-18 w-screen h-screen transition-all ${show ? "left-0" : "left-full"}`}>
+            <div className={`absolute px-4 bg-white top-18 w-screen h-screen transition-all ${show ? "right-0" : "right-full"}`}>
                 <nav className="border-y border-gray-200 pt-4">
                     <ul className="font-medium">
                         <li className="pb-4"><a href="#">About</a></li>
@@ -33,7 +33,7 @@ const Navbar = () => {
                     <button className="bg-black text-white p-1 rounded-xl">Download CV</button>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
