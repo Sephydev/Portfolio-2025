@@ -8,7 +8,7 @@ const Navbar = () => {
     const [show, setShow] = useState(false)
 
     return (
-        <div className="flex">
+        <div className="flex lg:text-2xl">
             <button onClick={() => setShow(!show)} className="lg:hidden">
                 {
                     show ?
@@ -25,8 +25,8 @@ const Navbar = () => {
                         <li className="pb-4"><a href="#">Contact</a></li>
                     </ul>
                 </nav>
-                <div className="flex flex-col p-4 lg:flex-row">
-                    <button className="flex justify-between mb-4 lg:m-0 lg:mr-4 items-center">
+                <div className="flex flex-col p-4 lg:flex-row border-l border-gray-200">
+                    <button className="flex justify-between mb-4 lg:m-0 lg:mx-6 items-center">
                         <span className="lg:hidden">Switch Theme</span>
                         <img src={sunIcon} alt="theme icon" />
                     </button>
