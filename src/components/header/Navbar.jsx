@@ -8,7 +8,7 @@ const Navbar = () => {
     const [show, setShow] = useState(false)
 
     return (
-        <div className="flex lg:text-2xl">
+        <div className="flex">
             <button onClick={() => setShow(!show)} className="lg:hidden">
                 {
                     show ?

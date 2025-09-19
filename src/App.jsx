@@ -1,10 +1,11 @@
 import Header from './components/header/Header'
+import Hero from './components/hero/Hero'
 
 const App = () => {
   return (
-    <div className="font-doto w-screen h-screen">
+    <div className="font-doto p-4 lg:px-20 w-screen h-screen">
         <Header />
-        <h1>Hello World!</h1>
+        <Hero />
     </div>
 
   )
