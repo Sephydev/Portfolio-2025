@@ -17,7 +17,7 @@ const Hero = () => {
                 </p>
                 <div className="mb-2"><img className="inline mr-2" src={locationIcon} alt="location icon" />Liège, Belgium</div>
                 <div className="mb-12"><img className="inline ml-2 mr-4 w-[16px] h-[16px] mr-2" src={greenDotIcon} alt="available icon" />Available for new projects</div>
-                <a href="#"><img className="inline" src={githubIcon} alt="github icon"/></a>
+                <a href="#"><img className="inline hover:bg-gray-200 active:bg-gray-300 p-3 rounded-full" src={githubIcon} alt="github icon"/></a>
             </div>
         </div>
     )
