@@ -26,7 +26,7 @@ const AboutMe = () => {
                         <li>Focused on writing clean and maintanable code</li>
                         <li>Eligible for a PFI (Plan Formation-Insertion) to support my first professional experience</li>
                     </ul>
-                    <p>Feel free to check out my <a href="#" className="underline underline-offset-[3px]">Github</a> or connect with me - I'm always open to learning opportunities and collaboration!</p>
+                    <p>Feel free to check out my <a href="#" className="underline underline-offset-[3px] hover:text-gray-400 transition-all duration-150">Github</a> or connect with me - I'm always open to learning opportunities and collaboration!</p>
                 </div>
             </div>
         </div>
