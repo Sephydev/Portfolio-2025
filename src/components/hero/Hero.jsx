@@ -5,7 +5,7 @@ import avatar from "../../assets/img/avatar.svg"
 
 const Hero = () => {
     return (
-        <div className="my-20 pl-4 pr-5 lg:flex lg:flex-row-reverse lg:px-20 lg:justify-evenly">
+        <div className="lg:m-auto lg:my-20 my-20 pl-4 pr-5 lg:flex lg:flex-row-reverse md:px-15 lg:px-20 lg:justify-between max-w-[1280px]">
             <img className="max-w-[240px] max-h-[240px] rounded-full m-auto lg:mx-0 lg:mt-0 mb-12 shadow-[0px_10px_0px_10px_#e5e7eb] lg:shadow-[40px_40px_0px_0px_lightgray]" src={avatar} alt="avatar" />
             <div className="lg:max-w-xl lg:flex lg:flex-col justify-center">
                 <h1 className="text-3xl mb-2 font-semibold">Hello, I'm Nicolas 👋</h1>

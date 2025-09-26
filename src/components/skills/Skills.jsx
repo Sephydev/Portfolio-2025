@@ -8,7 +8,7 @@ const Skills = () => {
                 <h2 className="inline bg-gray-200 py-1 px-5 rounded-2xl text-sm font-medium mb-4">Skills</h2>
                 <p className="text-center">The skills, tools and technologies I have learned:</p>
             </div>
-            <ul className="max-w-[1920px] m-auto grid grid-cols-3 gap-4 lg:grid-flow-col lg:grid-rows-2 lg:auto-cols-fr lg:gap-12">
+            <ul className="max-w-[1280px] m-auto grid grid-cols-3 gap-4 lg:grid-flow-col lg:grid-rows-2 lg:auto-cols-fr lg:gap-12">
                 {technologiesData.map(t => (
                     <li key={t.name} className="flex flex-col items-center">
                         <img src={t.src} alt={t.name} className="max-w-[64px]" />
