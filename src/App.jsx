@@ -3,6 +3,7 @@ import Hero from './components/hero/Hero'
 import AboutMe from './components/about-me/AboutMe'
 import Skills from './components/skills/Skills'
 import Contact from './components/contact/Contact'
+import Footer from './components/footer/Footer'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <AboutMe />
         <Skills />
         <Contact />
+        <Footer />
     </div>
 
   )
