@@ -1,6 +1,7 @@
 import Header from './components/header/Header'
 import Hero from './components/hero/Hero'
 import AboutMe from './components/about-me/AboutMe'
+import Skills from './components/skills/Skills'
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
         <Header />
         <Hero />
         <AboutMe />
+        <Skills />
     </div>
 
   )

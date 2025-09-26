@@ -2,9 +2,9 @@ import AboutMeImg from "../../assets/img/aboutMeImg.svg"
 
 const AboutMe = () => {
     return (
-        <div className="bg-gray-100 min-w-screen pl-4 pr-5 py-16 lg:px-20">
+        <div className="bg-gray-100 min-w-screen max-w-[1920px] pl-4 pr-5 py-16 lg:px-20">
             <div className="flex justify-center">
-                <h1 className="inline bg-gray-200 py-1 px-5 rounded-2xl text-sm font-medium mb-6 lg:mb-12">About me</h1>
+                <h2 className="inline bg-gray-200 py-1 px-5 rounded-2xl text-sm font-medium mb-6 lg:mb-12">About me</h2>
             </div>
             <div className="flex flex-col xl:flex-row justify-evenly items-center mb-22">
                 <img src={AboutMeImg} alt="Someone making web design presentation" className="max-w-3xs lg:max-w-2xs shadow-[0px_20px_0px_20px_#e5e7eb] lg:shadow-[-40px_40px_0px_0px_#e5e7eb] border-l-[5px] border-b-[5px] border-gray-100 bg-gray-100 m-auto xl:m-0 mb-22 xl:ml-32"/>
