@@ -3,8 +3,9 @@ import { useState } from 'react'
 import navbarBarsIcon from '../../assets/icons/navbar-bars-icon.svg'
 import navbarCrossIcon from '../../assets/icons/navbar-cross-icon.svg'
 import sunIcon from '../../assets/icons/sun-icon.svg'
+import moonIcon from '../../assets/icons/moon-icon.svg'
 
-const Navbar = () => {
+const Navbar = ({darkMode, setDarkMode}) => {
     const [show, setShow] = useState(false)
 
     return (
@@ -16,21 +17,20 @@ const Navbar = () => {
                     <img src={navbarBarsIcon} alt="navbar icon"/>
                 }
             </button>
-            <div className={`absolute pl-4 bg-white top-17 w-screen h-screen transition-all ${show ? "right-0" : "right-[100rem]"} lg:static lg:w-auto lg:h-auto lg:flex lg:flex-row lg:items-center`}>
-                <nav className="border-y mr-5 border-gray-200 pt-4 lg:border-none">
+            <div className={`${darkMode ? "bg-black text-white" : "bg-white"} absolute pl-4 top-17 w-screen h-screen transition-all ${show ? "right-0" : "right-[100rem]"} lg:static lg:w-auto lg:h-auto lg:flex lg:flex-row lg:items-center`}>
+                <nav className={`border-y mr-5 ${darkMode ? "border-gray-700" : "border-gray-200"} pt-4 lg:border-none`}>
                     <ul className="font-medium lg:px-0 lg:flex lg:mr-12">
-                        <li className="pb-4 lg:mr-6"><a href="#">About</a></li>
-                        <li className="pb-4 lg:mr-6"><a href="#">Work</a></li>
-                        <li className="pb-4 lg:mr-6"><a href="#">Testimonials</a></li>
-                        <li className="pb-4"><a href="#">Contact</a></li>
+                        <li className="pb-4 lg:mr-6"><a href="#about" className={`${darkMode ? "text-white" : "text-black"} text-black hover:text-blue-500 transition-all duration-300`}>About</a></li>
+                        <li className="pb-4 lg:mr-6"><a href="#skills" className={`${darkMode ? "text-white" : "text-black"} text-black hover:text-blue-500 transition-all duration-300`}>Skills</a></li>
+                        <li className="pb-4 lg:mr-6"><a href="#contact" className={`${darkMode ? "text-white" : "text-black"} text-black hover:text-blue-500 transition-all duration-300`}>Contact</a></li>
                     </ul>
                 </nav>
-                <div className="flex flex-col py-4 mr-5 lg:flex-row lg:border-l border-gray-200">
-                    <button className="flex justify-between cursor-pointer mb-4 px-4 py-2 transition-all duration-300 lg:p-2 lg:rounded-full hover:bg-gray-300 active:bg-gray-400 rounded-md lg:m-0 lg:mx-6 items-center">
+                <div className={`flex flex-col py-4 mr-5 lg:flex-row lg:border-l ${darkMode ? "border-gray-800" : "border-gray-200"}`}>
+                    <button onClick={() => setDarkMode(!darkMode)} className="flex justify-between cursor-pointer mb-4 py-2 transition-all duration-300 lg:p-2 lg:rounded-full hover:bg-blue-500 active:bg-gray-400 rounded-md lg:m-0 lg:mx-6 items-center">
                         <span className="lg:hidden">Switch Theme</span>
-                        <img src={sunIcon} alt="theme icon" />
+                        <img src={darkMode ? moonIcon : sunIcon} alt="theme icon" />
                     </button>
-                    <button className="bg-gray-900 m-auto text-white p-1 w-2xs hover:bg-gray-700 cursor-pointer transition-all duration-250 lg:w-auto lg:px-4 rounded-xl">Download CV</button>
+                    <a href="#" target="_blank" className={`${darkMode ? "bg-white text-black" : "bg-gray-900 text-white"} m-auto p-1 w-2xs hover:bg-blue-500 cursor-pointer transition-all duration-250 lg:w-auto lg:px-4 rounded-xl`}>Download CV</a>
                 </div>
             </div>
         </div>
