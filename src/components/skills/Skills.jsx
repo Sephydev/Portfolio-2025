@@ -1,5 +1,4 @@
 import technologiesData from "./technologiesData"
-import test from "../../assets/img/technologiesIcon/HTML5.svg"
 
 const Skills = ({ darkMode }) => {
     return (

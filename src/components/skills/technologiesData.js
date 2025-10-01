@@ -9,6 +9,7 @@ import TailwindCSS from "../../assets/img/technologiesIcon/Tailwind CSS.svg"
 import Playwright from "../../assets/img/technologiesIcon/Playwrite.svg"
 import Bash from "../../assets/img/technologiesIcon/Bash.svg"
 import Git from "../../assets/img/technologiesIcon/Git.svg"
+import Redux from '../../assets/img/technologiesIcon/Redux.svg'
 
 const technologiesData = [
     {
@@ -54,6 +55,10 @@ const technologiesData = [
     {
         name: "Git",
         src: Git
+    },
+    {
+        name: "Redux",
+        src: Redux
     }
 ]
 
