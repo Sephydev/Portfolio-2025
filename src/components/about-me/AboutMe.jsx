@@ -15,10 +15,10 @@ const AboutMe = ({ darkMode }) => {
                     I focus on building clean, responsive, and user-friendly web applications, and I enjoy turning indeas into functional products.
                     </p>
                     <p className="mb-4">
-                        My journey started with a year of computer science studies at university of Tours, followed by several intensive training programs such as Becode, IFAPME and FullStackOpen curriculum. These experences taught me the fundamentals of modern web development and sparked by passion for learning new technologies and improving my skills.
+                        My journey started with a year of computer science studies at university of Tours, followed by several intensive training programs such as Becode, IFAPME and FullStackOpen curriculum. These experiences taught me the fundamentals of modern web development and sparked by passion for learning new technologies and improving my skills.
                     </p>
                     <p className="mb-4">
-                        Today, I'm eager to join a team where I can contribute to   real-world projects, continue growing as a developer, and deliver     value from day one.
+                        Today, I'm eager to join a team where I can contribute to real-world projects, continue growing as a developer, and deliver value from day one.
                     </p>
                     <div className="mb-4">Quick facts about me:</div>
                     <ul className="list-disc mb-4 ml-4">
