@@ -7,6 +7,8 @@ import navbarCrossIcon from '../../assets/icons/navbar-cross-icon.svg'
 import sunIcon from '../../assets/icons/sun-icon.svg'
 import moonIcon from '../../assets/icons/moon-icon.svg'
 
+import CV from '../../assets/files/Nicolas_Bussiere_Junior_Web_Dev.pdf'
+
 const Navbar = ({darkMode, setDarkMode}) => {
     const [show, setShow] = useState(false)
 
@@ -34,7 +36,7 @@ const Navbar = ({darkMode, setDarkMode}) => {
                         <span className="lg:hidden">Switch Theme</span>
                         <img src={darkMode ? moonIcon : sunIcon} alt="theme icon" />
                     </button>
-                    <a href="#" target="_blank" className={`${darkMode ? "bg-white text-black" : "bg-gray-900 text-white"} m-auto p-1 w-2xs hover:bg-blue-500 cursor-pointer transition-all duration-250 lg:w-auto lg:px-4 rounded-xl`}>Download CV</a>
+                    <a href={CV} download className={`${darkMode ? "bg-white text-black" : "bg-gray-900 text-white"} m-auto p-1 w-2xs hover:bg-blue-500 cursor-pointer transition-all duration-250 lg:w-auto lg:px-4 rounded-xl`}>Download CV</a>
                 </div>
             </div>
         </div>
