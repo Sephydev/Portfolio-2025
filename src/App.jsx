@@ -4,6 +4,7 @@ import Header from './components/header/Header'
 import Hero from './components/hero/Hero'
 import AboutMe from './components/about-me/AboutMe'
 import Skills from './components/skills/Skills'
+import Work from './components/work/Work'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 
@@ -16,8 +17,9 @@ const App = () => {
         <Hero />
         <AboutMe darkMode={darkMode}/>
         <Skills darkMode={darkMode} />
+        <Work darkMode={darkMode} />
         <Contact darkMode={darkMode} />
-        <Footer />
+        <Footer darkMode={darkMode} />
     </div>
 
   )

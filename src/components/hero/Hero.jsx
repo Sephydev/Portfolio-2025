@@ -17,7 +17,9 @@ const Hero = () => {
                 </p>
                 <a href="https://maps.app.goo.gl/TDmaCWQVWFcxbCBw7" target="_blank" className="w-fit mb-2 hover:text-blue-500 transition-all duration-300"><img className="inline mr-2" src={locationIcon} alt="location icon" />Liège, Belgium</a>
                 <div className="mb-12"><img className="inline ml-2 mr-4 w-[16px] h-[16px] mr-2" src={greenDotIcon} alt="available icon" />Available for new projects</div>
-                <a href="https://github.com/Sephydev" target="_blank"><img className="inline hover:bg-blue-500 p-3 rounded-full transition-all duration-300" src={githubIcon} alt="github icon"/></a>
+                <a href="https://github.com/Sephydev" target="_blank">
+                    <img className="inline hover:bg-blue-500 p-3 rounded-full transition-all duration-300" src={githubIcon} alt="github icon"/>
+                </a>
             </div>
         </div>
     )
