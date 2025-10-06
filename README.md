@@ -22,7 +22,6 @@ This is my personal portfolio website, built to showcase my skills, projects, an
 
 ## 📷 Preview
 ![Portfolio Screenshot](./src/assets/img/screenShot-Portfolio/Porfolio-Screenshot.png)  
-*(Add a screenshot of your homepage once deployed)*
 
 ## 📄 License
 This project is for personal use. Feel free to get inspired, but please don’t copy-paste without adapting.
